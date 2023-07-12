@@ -1,2 +1,2 @@
 #!/bin/bash
-GRKG="Uryyb, Jbeyq!" echo "$GRKG" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+bash rot13.sh hello world
