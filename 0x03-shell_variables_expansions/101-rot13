@@ -1,2 +1,2 @@
 #!/bin/bash
-bash rot13.sh hello world
+tr 'A-Za-z' 'N-ZA-Mn-za-m'
