@@ -1,10 +1,4 @@
 #!/bin/bash
 
+ssh -i ~/.ssh/school ubuntu@54.157.173.236
 # Connect to the server using SSH with the private key ~/.ssh/school and the user ubuntu
-ssh -i ~/.ssh/school ubuntu@54.210.13.83 << EOF
-# Command to execute on the server
-echo "Connected to server01"
-# Exit the SSH session
-exit
-EOF
-
