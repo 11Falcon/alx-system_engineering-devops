@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # using puppet to make changes to our congiguration file
-file{ 'ect/ssh/ssh_config':
+file { 'ect/ssh/ssh_cofig':
 	ensure => present,
 
 content => "
