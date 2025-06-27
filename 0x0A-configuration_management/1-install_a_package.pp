@@ -1,11 +1,10 @@
-# Ensure pip3 is installed
+# 1-install_a_package.pp
 
 package { 'python3-pip':
   ensure => installed,
 }
 
-# Install Flask version 2.1.0 via pip3
 exec { 'install_flask':
- command => '/usr/bin/pip3 install Flask==2.1.0',
- unless  => '/usr/bin/pip3 show flask | grep -q "Version:2.1.0"',
+  command => '/usr/bin/pip3 install Flask==2.1.0',
+  unless  => '/usr/bin/pip3 show flask | grep -q "Version: 2.1.0"',
 }
